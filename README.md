@@ -1,48 +1,49 @@
-# C2PA Intake Verifier MCP
+# C2PA Intake Verifier
 
-C2PA intake verifier MCP with structured receipts.
+C2PA Intake Verifier is a hosted remote MCP for C2PA intake verifier MCP.
 
-Paid remote MCP for C2PA intake verifier MCP, structured receipts, audit logs, and reviewer-ready evidence.
+This repository is a public documentation project for C2PA Intake Verifier. Its structure follows the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and a public-safe boundary.
 
-## Public Endpoints
+## Start Here
 
-- Website: https://c2paintake.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- MCP endpoint: https://c2paintake.clauxel.com/mcp
+- Website: https://c2paintake.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=c2paintake_public_docs&utm_content=readme_home
+- Pricing: https://c2paintake.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=c2paintake_public_docs&utm_content=readme_pricing
+- Checkout: https://c2paintake.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=c2paintake_public_docs&utm_content=readme_checkout
+- Support: support@aigeamy.com
+
+## Remote MCP
+
+- Endpoint: https://c2paintake.clauxel.com/mcp
 - Server card: https://c2paintake.clauxel.com/server-card.json
 - Registry name: `com.clauxel.c2paintake/c2paintake-mcp`
+- Tools: `verify_c2pa_intake`, `classify_source_risk`, `issue_media_receipt`, `explain_missing_credentials`, `export_intake_log`
 
-## Access
+## Reading Order
 
-This is a paid hosted remote MCP. Production calls require a bearer token issued from the product website.
+1. [Quickstart](guide/quickstart.md)
+2. [Evaluation guide](guide/evaluation.md)
+3. [Checkout and pricing](guide/checkout-and-pricing.md)
+4. [Workflow notes](features/workflow.md)
+5. [Security model](features/security-model.md)
+6. [Public link reference](reference/links.md)
 
-```http
-Authorization: Bearer <token>
-```
+## Audience
 
-Unauthenticated browser visits to `/mcp` return a clear JSON error instead of internal details.
+AI governance teams, policy reviewers, trust and safety leads, and compliance operators.
 
-## Tools
+## Capabilities
 
-- `verify_c2pa_intake`
-- `classify_source_risk`
-- `issue_media_receipt`
-- `explain_missing_credentials`
-- `export_intake_log`
+- Streamable HTTP MCP endpoint
+- Bearer-token access for production calls
+- Structured tool-call output
+- Receipt-oriented evidence export
+- Public server card and registry metadata
+- MCP tool: verify_c2pa_intake
+- MCP tool: classify_source_risk
+- MCP tool: issue_media_receipt
+- MCP tool: explain_missing_credentials
+- MCP tool: export_intake_log
 
-## Quick Start
+## Public-Safe Boundary
 
-1. Open the website and choose a plan.
-2. Create or request an API token.
-3. Add the endpoint to an MCP client that supports Streamable HTTP remote servers.
-4. Send JSON-RPC requests with the bearer token.
-
-## Useful Links
-
-- Product page: https://c2paintake.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- Pricing: https://c2paintake.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605#pricing
-- Server card: https://c2paintake.clauxel.com/server-card.json
-- MCP endpoint: https://c2paintake.clauxel.com/mcp
-
-## Status
-
-This repository is a public documentation and directory-submission reference for the hosted service. It does not contain the private production source code.
+This repository contains documentation only. It does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.
