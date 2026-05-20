@@ -1,15 +1,12 @@
-# C2PA Intake Verifier
+# C2PA Intake Verifier MCP
 
-C2PA Intake Verifier is a hosted remote MCP for C2PA intake verifier MCP.
+Paid remote MCP for C2PA intake verifier MCP, structured receipts, audit logs, and reviewer-ready evidence.
 
 Website: https://c2paintake.clauxel.com/
-Docs pattern reference: https://github.com/clauxel/MiroFish
-Primary keyword: C2PA intake verifier MCP
-Type: MCP
-Default plan: team
 MCP endpoint: https://c2paintake.clauxel.com/mcp
 Server card: https://c2paintake.clauxel.com/server-card.json
-Registry name: com.clauxel.c2paintake/c2paintake-mcp
-Tools: verify_c2pa_intake, classify_source_risk, issue_media_receipt, explain_missing_credentials, export_intake_log
+Docs: https://github.com/clauxel/c2pa-intake-verifier-mcp
 
-Public boundary: docs-only repository; no production source code or secrets.
+Use case: C2PA intake verifier MCP with structured receipts.
+Authentication: Bearer token required for production use.
+Tools: verify_c2pa_intake, classify_source_risk, issue_media_receipt, explain_missing_credentials, export_intake_log
