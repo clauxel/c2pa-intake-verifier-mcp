@@ -1,13 +1,11 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.c2paintake/c2paintake-mcp",
-  "description": "C2PA Intake Verifier is a hosted remote MCP for C2PA intake verifier MCP.",
+  "title": "C2PA Intake Verifier MCP",
+  "description": "Paid remote MCP for C2PA intake verifier MCP, structured receipts, audit logs, and reviewer-ready evidence.",
   "version": "1.0.0",
-  "website_url": "https://c2paintake.clauxel.com/",
-  "repository": {
-    "url": "https://github.com/clauxel/c2pa-intake-verifier-mcp",
-    "source": "github"
-  },
+  "websiteUrl": "https://c2paintake.clauxel.com/",
+  "documentationUrl": "https://github.com/clauxel/c2pa-intake-verifier-mcp",
+  "serverCardUrl": "https://c2paintake.clauxel.com/server-card.json",
   "remotes": [
     {
       "type": "streamable-http",
@@ -15,17 +13,15 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website.",
-          "is_required": true,
-          "is_secret": true
+          "description": "Bearer token from the product website."
         }
       ]
     }
   ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "title": "C2PA Intake Verifier MCP",
-      "server_card_url": "https://c2paintake.clauxel.com/server-card.json"
-    }
-  }
+  "tags": [
+    "c2pa",
+    "intake",
+    "verifier",
+    "remote-mcp"
+  ]
 }
