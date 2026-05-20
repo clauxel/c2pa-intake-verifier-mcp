@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.clauxel.c2paintake/c2paintake-mcp",
+  "description": "C2PA Intake Verifier is a hosted remote MCP for C2PA intake verifier MCP.",
+  "version": "1.0.0",
+  "website_url": "https://c2paintake.clauxel.com/",
+  "repository": {
+    "url": "https://github.com/clauxel/c2pa-intake-verifier-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://c2paintake.clauxel.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token from the product website.",
+          "is_required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "title": "C2PA Intake Verifier MCP",
+      "server_card_url": "https://c2paintake.clauxel.com/server-card.json"
+    }
+  }
+}
